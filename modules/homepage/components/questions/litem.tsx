@@ -23,9 +23,9 @@ export const Item = (props: IQuestionItemProps) => {
           <Link href={link ?? "#"} target='__blank'>
             <span className='text-lg'>{title}</span>
           </Link>
-          <div className='flex mt-2'>
+          <div className='flex mt-2 flex-wrap'>
               {tags && tags.length > 0 ? tags.map((tag, i) =>
-                <div className='px-2 text-xs border rounded-full text-grey-200 mr-2'>{tag}</div>
+                <div className='px-2 text-xs border rounded-full text-grey-200 mr-2 mt-2'>{tag}</div>
               ): null}
           </div>
         
